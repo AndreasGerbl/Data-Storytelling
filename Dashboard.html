@@ -1,0 +1,907 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Dokumentation &#8212; My Jupyter Book</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script >const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Report Dokumentation" href="Report.html" />
+    <link rel="prev" title="Story" href="Story.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Data Storytelling Dokumentation
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Story.html">
+   Story
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Dashboard Dokumentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Report.html">
+   Report Dokumentation
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Dashboard.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/Dashboard.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vorgehensweise">
+   Vorgehensweise:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code">
+   Code
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dash">
+     Dash
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visuals">
+     Visuals
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Dashboard Dokumentation</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vorgehensweise">
+   Vorgehensweise:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code">
+   Code
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dash">
+     Dash
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visuals">
+     Visuals
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="dashboard-dokumentation">
+<h1>Dashboard Dokumentation<a class="headerlink" href="#dashboard-dokumentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="vorgehensweise">
+<h2>Vorgehensweise:<a class="headerlink" href="#vorgehensweise" title="Permalink to this headline">¶</a></h2>
+<p>Das Dashboard soll die Datenvisualisierungen aufzeigen und dabei alle wichtigen Gestaltprinzipien für die Visuals erfüllen. Zuerst habe ich mich mit der Erstellung von Dash beschäftigt. Daraufhin habe ich erste Daten analysiert und dazu Visuals erstellt und später Dash tabs verwendet, um das Dashboard besser strukturieren zu können. Die Daten mussten stark modifiziert werden, um sinnvolle und aussagekräftige Visuals zu erhalten. Später musste ich von plotly.express auf plotly.graph_objects umsteigen, um dessen Features für die Einhaltung von Gestaltungsprinzipien nutzen zu können. Visuals wurden stets mit deren Variablen instanziiert und letztlich designt. Durch update_layout wurden die Grids, Achsen (+Achsenabschnittsbezeichnungen) und Ticks einheitlich gestylt und durch annotations wurden Unterüberschriften und die Positionierung von Werten realisiert.</p>
+</div>
+<div class="section" id="code">
+<h2>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h2>
+<p>Nun noch einige Informationen zum Code:</p>
+<div class="section" id="dash">
+<h3>Dash<a class="headerlink" href="#dash" title="Permalink to this headline">¶</a></h3>
+<p>Die Umsetzung mit Dash hat gut funktioniert. Lediglich die Umsetzung der Tabs und das einhaltliche Gestalten von Visuals und Dashboard war teils sehr kompliziert. Features wie tabs_selected und das Einbetten von subplots haben lange Probleme verursacht, konnten letztlich aber gelöst werden. Durch das Einfügen eines external_stylesheet konnte das Dashboard zusätzlcih bearbeitet werden.</p>
+</div>
+<div class="section" id="visuals">
+<h3>Visuals<a class="headerlink" href="#visuals" title="Permalink to this headline">¶</a></h3>
+<p>Die Abbildungen wurden unter Berücksichtigung aller relevanten Gestaltprinzipien erstellt. Vor allem die Folien zu clutter elimination und Focus attention wurden verinnerlicht und auf alle Visuals angewendet. So befinden sich Farbverläufe, Abgrenzungen, Auszeichnungen und ähnliches in den Visuals und Konzepte wie die Focus checklist wurden angewandt. Teilweise habe ich mich stark verkünstelt und wollte auch Features wie Subplots und verschiedene libraries ausprobieren, was die Arbeit an den Figures noch weiter erschwerte. Auch die Abstimmung von plotly.express und ploty.graph_objects Visuals war sehr anstrengend, da jede library anders anzusteuern ist und bestimmte Features entweder nicht oder anders unterstützt oder mit hohem Aufwand ein workaround gefunden werden muss. Dabei alle Visuals einheitlich zu erstellen war sehr nervenaufreibend. So hatte jede library ihre Vor- und Nachteile sowie eine Menge Komplikationen. Letztlich bin ich aber doch mit dem Ergebnis sehr zufrieden und fühle mich dazu in der Lage, weitere Dashboards mit ploty Visuals aufzubauen.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">dash</span>
+<span class="kn">from</span> <span class="nn">dash.dependencies</span> <span class="kn">import</span> <span class="n">Input</span><span class="p">,</span> <span class="n">Output</span>
+<span class="kn">import</span> <span class="nn">dash_core_components</span> <span class="k">as</span> <span class="nn">dcc</span>
+<span class="kn">import</span> <span class="nn">dash_html_components</span> <span class="k">as</span> <span class="nn">html</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">from</span> <span class="nn">plotly.subplots</span> <span class="kn">import</span> <span class="n">make_subplots</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">external_stylesheets</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://codepen.io/chriddyp/pen/bWLwgP.css&#39;</span><span class="p">]</span>
+
+
+
+<span class="n">colors</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;background&#39;</span><span class="p">:</span> <span class="s1">&#39;#1e2130&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="s1">&#39;rgb(255,255,255)&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;div&#39;</span><span class="p">:</span> <span class="s1">&#39;#161a28&#39;</span>
+<span class="p">}</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">dash</span><span class="o">.</span><span class="n">Dash</span><span class="p">(</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">external_stylesheets</span><span class="o">=</span><span class="n">external_stylesheets</span><span class="p">)</span>
+
+
+<span class="c1"># plotly.graph_objects und pandas Dataframe funktionieren nicht daher nur 2 dataframes für die plotly.express Plots</span>
+<span class="c1"># Leider keine visuell ansprechenden Daten (welche zur Big Idea/Use Case passen) gefunden weshalb ich alle Daten modifizieren musste</span>
+<span class="c1"># (z.B. Immobilienpreisdaten von amerikanischen Häusern in $ nach € umgerechnet, West Coast/East Coast zu West/Ostdeutschland, usw.)</span>
+<span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/Total % Change.csv&#39;</span><span class="p">)</span>
+<span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/Prices Increase per Year final.csv&#39;</span><span class="p">)</span>
+
+
+
+<span class="n">tab_style</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;background&quot;</span><span class="p">:</span> <span class="s2">&quot;#161a28&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;text-transform&#39;</span><span class="p">:</span> <span class="s1">&#39;uppercase&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;border&#39;</span><span class="p">:</span> <span class="s1">&#39;grey&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;font-size&#39;</span><span class="p">:</span> <span class="s1">&#39;11px&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;font-weight&#39;</span><span class="p">:</span> <span class="mi">600</span><span class="p">,</span>
+    <span class="s1">&#39;align-items&#39;</span><span class="p">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;justify-content&#39;</span><span class="p">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;border-radius&#39;</span><span class="p">:</span> <span class="s1">&#39;4px&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;padding&#39;</span><span class="p">:</span><span class="s1">&#39;6px&#39;</span>
+<span class="p">}</span>
+
+<span class="n">tab_selected_style</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;background&quot;</span><span class="p">:</span> <span class="s2">&quot;#2D303D&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;text-transform&#39;</span><span class="p">:</span> <span class="s1">&#39;uppercase&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;font-size&#39;</span><span class="p">:</span> <span class="s1">&#39;11px&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;font-weight&#39;</span><span class="p">:</span> <span class="mi">600</span><span class="p">,</span>
+    <span class="s1">&#39;align-items&#39;</span><span class="p">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;justify-content&#39;</span><span class="p">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;border-radius&#39;</span><span class="p">:</span> <span class="s1">&#39;4px&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;padding&#39;</span><span class="p">:</span><span class="s1">&#39;6px&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;border-style&#39;</span><span class="p">:</span> <span class="s1">&#39;solid&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;border-color&#39;</span><span class="p">:</span> <span class="s1">&#39;grey&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+
+
+
+
+<span class="c1"># title dient nur der Formatierung (nur nötig bei plotly.express), &amp;nbsp; zur Anpassung des Zeileneinschubs </span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;% Veränderung in den letzten 30 Jahren&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Region&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;avg&quot;</span><span class="p">,</span> <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;#&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;% Veränderung in den letzten 30 Jahren&quot;</span><span class="p">,</span> <span class="n">color_discrete_map</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;neg&#39;</span><span class="p">:</span> <span class="s1">&#39;#CC0000&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;under_avg&#39;</span><span class="p">:</span> <span class="s1">&#39;#3EC03E&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;over_avg&#39;</span><span class="p">:</span> <span class="s1">&#39;#1ABD1A&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;top&#39;</span><span class="p">:</span> <span class="s1">&#39;#00AB00&#39;</span>
+    <span class="p">},)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">textposition</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">showline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">showticklabels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">linecolor</span><span class="o">=</span><span class="s1">&#39;rgb(204, 204, 204)&#39;</span><span class="p">,</span>
+        <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+        <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span>
+        <span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+            <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(200, 200, 200)&#39;</span><span class="p">,</span>
+        <span class="p">),</span>
+    <span class="p">),</span>
+<span class="p">)</span>
+
+<span class="n">annotations</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">annotations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">xref</span><span class="o">=</span><span class="s1">&#39;paper&#39;</span><span class="p">,</span> <span class="n">yref</span><span class="o">=</span><span class="s1">&#39;paper&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.05</span><span class="p">,</span>
+                              <span class="n">xanchor</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span>
+                              <span class="n">text</span><span class="o">=</span><span class="s2">&quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Prozentualle Preisentwicklung von Immobilien in deutschen Städten&quot;</span><span class="p">,</span>
+                              <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+                                        <span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span>
+                                        <span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(140,140,140)&#39;</span><span class="p">),</span>
+                              <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">annotations</span><span class="o">=</span><span class="n">annotations</span><span class="p">,</span> <span class="n">title_text</span><span class="o">=</span><span class="s2">&quot;Immobilienpreisentwicklung in deutschen Städten&quot;</span><span class="p">,</span> <span class="n">title_font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(255,255,255)&#39;</span><span class="p">),</span> <span class="n">yaxis_title</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+
+<span class="n">Labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Westdeutschland&quot;</span><span class="p">,</span> <span class="s2">&quot;Ostdeutschland&quot;</span><span class="p">]</span>
+<span class="c1"># title dient nur der Formatierung (nur nötig bei plotly.express), &amp;nbsp; zur Anpassung des Zeileneinschubs </span>
+<span class="n">fig2</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">df2</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Jahr&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Inflationsbereinigter Preisindex&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;Standort&#39;</span><span class="p">,</span> <span class="n">symbol</span><span class="o">=</span><span class="s2">&quot;Standort&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;#&quot;</span><span class="p">,</span> <span class="n">color_discrete_map</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;West&#39;</span><span class="p">:</span> <span class="s1">&#39;#00AB00&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Ost&#39;</span><span class="p">:</span> <span class="s1">&#39;#CC0000&#39;</span>
+    <span class="p">})</span>
+
+<span class="n">annotations</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">annotations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">xref</span><span class="o">=</span><span class="s1">&#39;paper&#39;</span><span class="p">,</span> <span class="n">yref</span><span class="o">=</span><span class="s1">&#39;paper&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.05</span><span class="p">,</span>
+                              <span class="n">xanchor</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span>
+                              <span class="n">text</span><span class="o">=</span><span class="s2">&quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Inflationsbereinigter Preisindexvergleich zwischen West- und Ostdeutschland&quot;</span><span class="p">,</span>
+                              <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+                                        <span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span>
+                                        <span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(140,140,140)&#39;</span><span class="p">),</span>
+                              <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+
+<span class="n">fig2</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">annotations</span><span class="o">=</span><span class="n">annotations</span><span class="p">,</span> <span class="n">title_text</span><span class="o">=</span><span class="s2">&quot;Entwicklung der Immobilienpreise in West/Ost&quot;</span><span class="p">,</span> <span class="n">title_font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(255,255,255)&#39;</span><span class="p">),</span> <span class="n">xaxis_title</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+
+<span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;klein&#39;</span><span class="p">,</span><span class="s1">&#39;mittel&#39;</span><span class="p">,</span><span class="s1">&#39;groß&#39;</span><span class="p">]</span>
+<span class="n">v_colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;rgb(67,67,67)&#39;</span><span class="p">,</span> <span class="s1">&#39;rgb(160,160,160)&#39;</span><span class="p">,</span> <span class="s1">&#39;rgb(0,171,0)&#39;</span><span class="p">]</span>
+
+<span class="n">mode_size</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="n">line_size</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+
+<span class="n">x_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">2009</span><span class="p">,</span> <span class="mi">2021</span><span class="p">),)</span><span class="o">*</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="n">y_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">180</span><span class="p">,</span><span class="mi">175</span><span class="p">,</span><span class="mi">175</span><span class="p">,</span><span class="mi">180</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">180</span><span class="p">,</span><span class="mi">180</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">190</span><span class="p">,</span><span class="mi">195</span><span class="p">,</span><span class="mi">200</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">160</span><span class="p">,</span><span class="mi">165</span><span class="p">,</span><span class="mi">170</span><span class="p">,</span><span class="mi">175</span><span class="p">,</span><span class="mi">180</span><span class="p">,</span><span class="mi">190</span><span class="p">,</span><span class="mi">190</span><span class="p">,</span><span class="mi">190</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">205</span><span class="p">,</span><span class="mi">210</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">145</span><span class="p">,</span><span class="mi">150</span><span class="p">,</span><span class="mi">155</span><span class="p">,</span><span class="mi">165</span><span class="p">,</span><span class="mi">170</span><span class="p">,</span><span class="mi">180</span><span class="p">,</span><span class="mi">190</span><span class="p">,</span><span class="mi">195</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">210</span><span class="p">,</span><span class="mi">230</span><span class="p">,</span><span class="mi">250</span><span class="p">],</span>
+<span class="p">])</span>
+
+
+<span class="n">fig1</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">fig1</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x_data</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">y_data</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span>
+        <span class="n">name</span><span class="o">=</span><span class="n">labels</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+        <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">v_colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">width</span><span class="o">=</span><span class="n">line_size</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span>
+        <span class="n">connectgaps</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="p">))</span>
+
+    <span class="n">fig1</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+        <span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="n">x_data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">x_data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]],</span>
+        <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="n">y_data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">y_data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]],</span>
+        <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;markers&#39;</span><span class="p">,</span>
+        <span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">v_colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">size</span><span class="o">=</span><span class="n">mode_size</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="p">))</span>
+
+<span class="n">fig1</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">showline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">showticklabels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">linecolor</span><span class="o">=</span><span class="s1">&#39;rgb(204, 204, 204)&#39;</span><span class="p">,</span>
+        <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+        <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span>
+        <span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+            <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(200, 200, 200)&#39;</span><span class="p">,</span>
+        <span class="p">),</span>
+    <span class="p">),</span>
+    <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">zeroline</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">showline</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">showticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">annotations</span> <span class="o">=</span> <span class="p">[]</span>
+
+
+<span class="k">for</span> <span class="n">y_trace</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">v_color</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">y_data</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">v_colors</span><span class="p">):</span>
+    <span class="n">annotations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">xref</span><span class="o">=</span><span class="s1">&#39;paper&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y_trace</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                                  <span class="n">xanchor</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="s1">&#39;middle&#39;</span><span class="p">,</span>
+                                  <span class="n">text</span><span class="o">=</span><span class="n">label</span> <span class="o">+</span> <span class="s1">&#39; </span><span class="si">{}</span><span class="s1">%&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">y_trace</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
+                                  <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+                                            <span class="n">size</span><span class="o">=</span><span class="mi">16</span><span class="p">),</span>
+                                  <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+    <span class="n">annotations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">xref</span><span class="o">=</span><span class="s1">&#39;paper&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y_trace</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span>
+                                  <span class="n">xanchor</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="s1">&#39;middle&#39;</span><span class="p">,</span>
+                                  <span class="n">text</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">%&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">y_trace</span><span class="p">[</span><span class="mi">11</span><span class="p">]),</span>
+                                  <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+                                            <span class="n">size</span><span class="o">=</span><span class="mi">16</span><span class="p">),</span>
+                                  <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+<span class="n">annotations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">xref</span><span class="o">=</span><span class="s1">&#39;paper&#39;</span><span class="p">,</span> <span class="n">yref</span><span class="o">=</span><span class="s1">&#39;paper&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.05</span><span class="p">,</span>
+                              <span class="n">xanchor</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span>
+                              <span class="n">text</span><span class="o">=</span><span class="s1">&#39;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Befragung deutscher Eigenheimbesitzer nach gewünschten Hausmodernisierungen&#39;</span><span class="p">,</span>
+                              <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+                                        <span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span>
+                                        <span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(140,140,140)&#39;</span><span class="p">),</span>
+                              <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+
+<span class="n">fig1</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">annotations</span><span class="o">=</span><span class="n">annotations</span><span class="p">,</span> <span class="n">title_text</span><span class="o">=</span><span class="s2">&quot;Bedarf an Hausmodernisierungen deutscher Eigenheime&quot;</span><span class="p">,</span> <span class="n">title_font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(255,255,255)&#39;</span><span class="p">))</span>
+
+
+<span class="n">improvements</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;klein&#39;</span><span class="p">,</span> <span class="s1">&#39;mittel&#39;</span><span class="p">,</span> <span class="s1">&#39;groß&#39;</span><span class="p">]</span>
+<span class="n">y1</span><span class="o">=</span><span class="p">[</span><span class="mi">5000</span><span class="p">,</span> <span class="mi">10000</span><span class="p">,</span> <span class="mi">20000</span><span class="p">]</span>
+<span class="n">y2</span><span class="o">=</span><span class="p">[</span><span class="mi">6000</span><span class="p">,</span> <span class="mi">14500</span><span class="p">,</span> <span class="mi">34000</span><span class="p">]</span>
+
+<span class="n">fig7</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+
+<span class="n">fig7</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">improvements</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y1</span><span class="p">,</span>
+                <span class="n">base</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">5000</span><span class="p">,</span><span class="o">-</span><span class="mi">10000</span><span class="p">,</span><span class="o">-</span><span class="mi">20000</span><span class="p">],</span>
+                <span class="n">marker_color</span><span class="o">=</span><span class="s1">&#39;#CC0000&#39;</span><span class="p">,</span>
+                <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Kosten&#39;</span><span class="p">,</span>
+                <span class="n">text</span><span class="o">=</span><span class="n">y1</span><span class="p">,</span>
+                <span class="n">textposition</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,))</span>
+<span class="n">fig7</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">improvements</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y2</span><span class="p">,</span>
+                <span class="n">base</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                <span class="n">marker_color</span><span class="o">=</span><span class="s1">&#39;#00AB00&#39;</span><span class="p">,</span>
+                <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Wertsteigerung&#39;</span><span class="p">,</span>
+                <span class="n">text</span><span class="o">=</span><span class="n">y2</span><span class="p">,</span>
+                <span class="n">textposition</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+                <span class="p">))</span>
+
+<span class="n">annotations</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="n">annotations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">xref</span><span class="o">=</span><span class="s1">&#39;paper&#39;</span><span class="p">,</span> <span class="n">yref</span><span class="o">=</span><span class="s1">&#39;paper&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.05</span><span class="p">,</span>
+                              <span class="n">xanchor</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span>
+                              <span class="n">text</span><span class="o">=</span><span class="s1">&#39;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Kostenvergleich mit durchschnittlicher Immobilienwertsteigerung&#39;</span><span class="p">,</span>
+                              <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+                                        <span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span>
+                                        <span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(140,140,140)&#39;</span><span class="p">),</span>
+                              <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+
+<span class="n">fig7</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">annotations</span><span class="o">=</span><span class="n">annotations</span><span class="p">,</span> <span class="n">title_text</span><span class="o">=</span><span class="s2">&quot;Wertsteigerung durch Immobilienmodernisierungen&quot;</span><span class="p">,</span> <span class="n">title_font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(255,255,255)&#39;</span><span class="p">))</span>
+
+<span class="n">fig7</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;klein&#39;</span><span class="p">,</span><span class="s1">&#39;mittel&#39;</span><span class="p">,</span><span class="s1">&#39;groß&#39;</span><span class="p">],</span>
+    <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">36000</span><span class="p">,</span> <span class="mi">36000</span><span class="p">,</span> <span class="mi">36000</span><span class="p">],</span>
+    <span class="n">text</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;20% Profit&quot;</span><span class="p">,</span> <span class="s2">&quot;45% Profit&quot;</span><span class="p">,</span> <span class="s2">&quot;70% Profit&quot;</span><span class="p">],</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">,</span>
+    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">))</span>
+
+<span class="n">y3</span><span class="o">=</span> <span class="p">[</span><span class="mi">320000</span><span class="p">,</span><span class="mi">350000</span><span class="p">,</span><span class="mi">400000</span><span class="p">,</span><span class="mi">440000</span><span class="p">,</span><span class="mi">430000</span><span class="p">,</span><span class="mi">420000</span><span class="p">,</span><span class="mi">410000</span><span class="p">,</span><span class="mi">410000</span><span class="p">,</span><span class="mi">420000</span><span class="p">,</span><span class="mi">530000</span><span class="p">,</span><span class="mi">500000</span><span class="p">,</span>
+     <span class="mi">480000</span><span class="p">,</span><span class="mi">400000</span><span class="p">,</span><span class="mi">450000</span><span class="p">,</span><span class="mi">460000</span><span class="p">,</span><span class="mi">550000</span><span class="p">,</span><span class="mi">540000</span><span class="p">,</span><span class="mi">540000</span><span class="p">,</span><span class="mi">530000</span><span class="p">,</span><span class="mi">520000</span><span class="p">,</span><span class="mi">530000</span><span class="p">,</span><span class="mi">630000</span><span class="p">,</span><span class="mi">600000</span><span class="p">,</span>
+     <span class="mi">520000</span><span class="p">,</span><span class="mi">550000</span><span class="p">,</span><span class="mi">600000</span><span class="p">,</span><span class="mi">600000</span><span class="p">,</span><span class="mi">680000</span><span class="p">,</span><span class="mi">720000</span><span class="p">,</span><span class="mi">720000</span><span class="p">,</span><span class="mi">650000</span><span class="p">,</span><span class="mi">660000</span><span class="p">,</span>
+     <span class="mi">650000</span><span class="p">,</span><span class="mi">710000</span><span class="p">,</span><span class="mi">690000</span><span class="p">,</span><span class="mi">610000</span><span class="p">,</span><span class="mi">630000</span><span class="p">,</span><span class="mi">720000</span><span class="p">,</span><span class="mi">790000</span><span class="p">,</span><span class="mi">780000</span><span class="p">,</span><span class="mi">820000</span><span class="p">,</span><span class="mi">870000</span><span class="p">,</span>
+     <span class="mi">810000</span><span class="p">,</span><span class="mi">770000</span><span class="p">,</span><span class="mi">860000</span><span class="p">,</span><span class="mi">890000</span><span class="p">,</span><span class="mi">790000</span><span class="p">,</span><span class="mi">720000</span><span class="p">,</span><span class="mi">890000</span><span class="p">,</span><span class="mi">910000</span><span class="p">,</span><span class="mi">1000000</span><span class="p">,</span><span class="mi">1020000</span><span class="p">,</span>
+     <span class="p">]</span>
+<span class="n">x3</span><span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Jan 15&#39;</span><span class="p">,</span><span class="s1">&#39;Feb 15&#39;</span><span class="p">,</span><span class="s1">&#39;Mar 15&#39;</span><span class="p">,</span><span class="s1">&#39;Apr 15&#39;</span><span class="p">,</span><span class="s1">&#39;Mai 15&#39;</span><span class="p">,</span><span class="s1">&#39;Jun 15&#39;</span><span class="p">,</span><span class="s1">&#39;Jul 15&#39;</span><span class="p">,</span><span class="s1">&#39;Aug 15&#39;</span><span class="p">,</span><span class="s1">&#39;Sep 15&#39;</span><span class="p">,</span>
+     <span class="s1">&#39;Oct 15&#39;</span><span class="p">,</span><span class="s1">&#39;Nov 15&#39;</span><span class="p">,</span><span class="s1">&#39;Dez 15&#39;</span><span class="p">,</span><span class="s1">&#39;Jan 16&#39;</span><span class="p">,</span><span class="s1">&#39;Feb 16&#39;</span><span class="p">,</span><span class="s1">&#39;Mar 16&#39;</span><span class="p">,</span><span class="s1">&#39;Apr 16&#39;</span><span class="p">,</span><span class="s1">&#39;Mai 16&#39;</span><span class="p">,</span><span class="s1">&#39;Jun 16&#39;</span><span class="p">,</span>
+     <span class="s1">&#39;Jul 16&#39;</span><span class="p">,</span><span class="s1">&#39;Aug 16&#39;</span><span class="p">,</span><span class="s1">&#39;Sep 16&#39;</span><span class="p">,</span><span class="s1">&#39;Oct 16&#39;</span><span class="p">,</span><span class="s1">&#39;Nov 16&#39;</span><span class="p">,</span><span class="s1">&#39;Dez 16&#39;</span><span class="p">,</span><span class="s1">&#39;Jan 17&#39;</span><span class="p">,</span><span class="s1">&#39;Feb 17&#39;</span><span class="p">,</span><span class="s1">&#39;Mar 17&#39;</span><span class="p">,</span>
+     <span class="s1">&#39;Apr 17&#39;</span><span class="p">,</span><span class="s1">&#39;Mai 17&#39;</span><span class="p">,</span><span class="s1">&#39;Jun 17&#39;</span><span class="p">,</span><span class="s1">&#39;Jul 17&#39;</span><span class="p">,</span><span class="s1">&#39;Aug 17&#39;</span><span class="p">,</span><span class="s1">&#39;Sep 17&#39;</span><span class="p">,</span><span class="s1">&#39;Oct 17&#39;</span><span class="p">,</span><span class="s1">&#39;Nov 17&#39;</span><span class="p">,</span><span class="s1">&#39;Dez 17&#39;</span><span class="p">,</span>
+     <span class="s1">&#39;Jan 18&#39;</span><span class="p">,</span><span class="s1">&#39;Feb 18&#39;</span><span class="p">,</span><span class="s1">&#39;Mar 18&#39;</span><span class="p">,</span><span class="s1">&#39;Apr 18&#39;</span><span class="p">,</span><span class="s1">&#39;Mai 18&#39;</span><span class="p">,</span><span class="s1">&#39;Jun 18&#39;</span><span class="p">,</span><span class="s1">&#39;Jul 18&#39;</span><span class="p">,</span><span class="s1">&#39;Aug 18&#39;</span><span class="p">,</span><span class="s1">&#39;Sep 18&#39;</span><span class="p">,</span>
+     <span class="s1">&#39;Oct 18&#39;</span><span class="p">,</span><span class="s1">&#39;Nov 18&#39;</span><span class="p">,</span><span class="s1">&#39;Dez 18&#39;</span><span class="p">,</span><span class="s1">&#39;Jan 19&#39;</span><span class="p">,</span><span class="s1">&#39;Feb 19&#39;</span><span class="p">,</span><span class="s1">&#39;Mar 19&#39;</span><span class="p">,</span><span class="s1">&#39;Apr 19&#39;</span>
+     <span class="p">]</span>
+
+<span class="n">f4colors</span><span class="o">=</span> <span class="p">[</span><span class="s1">&#39;lightslategray&#39;</span><span class="p">,]</span> <span class="o">*</span> <span class="mi">12</span>
+<span class="n">f4colors</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;crimson&#39;</span>
+<span class="n">f4colors</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;crimson&#39;</span>
+<span class="n">f4colors</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;#3EC03E&#39;</span>
+<span class="n">f4colors</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;#1ABD1A&#39;</span>
+<span class="n">f4colors</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;rgb(0,171,0)&#39;</span>
+<span class="n">f4colors</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;#1ABD1A&#39;</span>
+<span class="n">f4colors</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;#3EC03E&#39;</span>
+
+<span class="n">fig3</span> <span class="o">=</span> <span class="n">make_subplots</span><span class="p">(</span><span class="n">rows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">fig3</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x3</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y3</span><span class="p">,</span>
+                    <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+markers&#39;</span><span class="p">,</span>
+                    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;lines+markers&#39;</span><span class="p">,</span>
+                    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">fig3</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;JAN&#39;</span><span class="p">,</span><span class="s1">&#39;FEB&#39;</span><span class="p">,</span><span class="s1">&#39;MAR&#39;</span><span class="p">,</span><span class="s1">&#39;APR&#39;</span><span class="p">,</span><span class="s1">&#39;MAY&#39;</span><span class="p">,</span><span class="s1">&#39;JUN&#39;</span><span class="p">,</span><span class="s1">&#39;JUL&#39;</span><span class="p">,</span><span class="s1">&#39;AUG&#39;</span><span class="p">,</span><span class="s1">&#39;SEP&#39;</span><span class="p">,</span><span class="s1">&#39;OCT&#39;</span><span class="p">,</span><span class="s1">&#39;NOV&#39;</span><span class="p">,</span><span class="s1">&#39;DEZ&#39;</span><span class="p">,],</span> 
+                      <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">190000</span><span class="p">,</span><span class="mi">200000</span><span class="p">,</span><span class="mi">220000</span><span class="p">,</span><span class="mi">160000</span><span class="p">,</span><span class="mi">250000</span><span class="p">,</span><span class="mi">410000</span><span class="p">,</span><span class="mi">450000</span><span class="p">,</span><span class="mi">380000</span><span class="p">,</span><span class="mi">320000</span><span class="p">,</span><span class="mi">200000</span><span class="p">,</span><span class="mi">230000</span><span class="p">,</span><span class="mi">200000</span><span class="p">],</span>
+                      <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">marker_color</span><span class="o">=</span><span class="n">f4colors</span><span class="p">),</span>
+    <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+
+<span class="n">fig3</span><span class="o">.</span><span class="n">add_shape</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">&quot;circle&quot;</span><span class="p">,</span>
+    <span class="n">x0</span><span class="o">=</span><span class="s1">&#39;Nov 15&#39;</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="s1">&#39;Mar 16&#39;</span><span class="p">,</span> <span class="n">y0</span><span class="o">=</span><span class="mi">360000</span><span class="p">,</span> <span class="n">y1</span><span class="o">=</span><span class="mi">490000</span><span class="p">,</span>
+    <span class="n">line_color</span><span class="o">=</span><span class="s2">&quot;rgb(255,0,0)&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">fig3</span><span class="o">.</span><span class="n">add_shape</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">&quot;circle&quot;</span><span class="p">,</span>
+    <span class="n">x0</span><span class="o">=</span><span class="s1">&#39;Oct 16&#39;</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="s1">&#39;Feb 17&#39;</span><span class="p">,</span> <span class="n">y0</span><span class="o">=</span><span class="mi">480000</span><span class="p">,</span> <span class="n">y1</span><span class="o">=</span><span class="mi">610000</span><span class="p">,</span>
+    <span class="n">line_color</span><span class="o">=</span><span class="s2">&quot;rgb(255,0,0)&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">fig3</span><span class="o">.</span><span class="n">add_shape</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">&quot;circle&quot;</span><span class="p">,</span>
+    <span class="n">x0</span><span class="o">=</span><span class="s1">&#39;Oct 17&#39;</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="s1">&#39;Feb 18&#39;</span><span class="p">,</span> <span class="n">y0</span><span class="o">=</span><span class="mi">560000</span><span class="p">,</span> <span class="n">y1</span><span class="o">=</span><span class="mi">690000</span><span class="p">,</span>
+    <span class="n">line_color</span><span class="o">=</span><span class="s2">&quot;rgb(255,0,0)&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">fig3</span><span class="o">.</span><span class="n">add_shape</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">&quot;circle&quot;</span><span class="p">,</span>
+    <span class="n">x0</span><span class="o">=</span><span class="s1">&#39;Oct 18&#39;</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="s1">&#39;Feb 19&#39;</span><span class="p">,</span> <span class="n">y0</span><span class="o">=</span><span class="mi">680000</span><span class="p">,</span> <span class="n">y1</span><span class="o">=</span><span class="mi">810000</span><span class="p">,</span>
+    <span class="n">line_color</span><span class="o">=</span><span class="s2">&quot;rgb(255,0,0)&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+
+
+
+<span class="n">fig3</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="s2">&quot;Durchschnittlicher Verkaufspreis pro Monat                                                                   Anzahl verkaufter Immobilien pro Monat&quot;</span><span class="p">,</span> <span class="n">title_font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(255,255,255)&#39;</span><span class="p">))</span>
+<span class="n">fig3</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">tick0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">dtick</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">nticks</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">fig3</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">showline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">showticklabels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">linecolor</span><span class="o">=</span><span class="s1">&#39;rgb(204, 204, 204)&#39;</span><span class="p">,</span>
+        <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+        <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span>
+        <span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+            <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(200, 200, 200)&#39;</span><span class="p">,</span>
+        <span class="p">),</span>
+    <span class="p">),</span>
+    <span class="n">xaxis2</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">showline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">showticklabels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">linecolor</span><span class="o">=</span><span class="s1">&#39;rgb(204, 204, 204)&#39;</span><span class="p">,</span>
+        <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+        <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span>
+        <span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+            <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(200, 200, 200)&#39;</span><span class="p">,</span>
+        <span class="p">),</span>
+    <span class="p">),</span>
+    <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">showline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">showticklabels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">linecolor</span><span class="o">=</span><span class="s1">&#39;rgb(204, 204, 204)&#39;</span><span class="p">,</span>
+        <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+        <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span>
+        <span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+            <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(200, 200, 200)&#39;</span><span class="p">,</span>
+        <span class="p">),</span>
+    <span class="p">),</span>
+    <span class="n">yaxis2</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">showline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">showticklabels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">linecolor</span><span class="o">=</span><span class="s1">&#39;rgb(204, 204, 204)&#39;</span><span class="p">,</span>
+        <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+        <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span>
+        <span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+            <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(200, 200, 200)&#39;</span><span class="p">,</span>
+        <span class="p">),</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">add_shape</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">&quot;line&quot;</span><span class="p">,</span>
+    <span class="n">x0</span><span class="o">=</span><span class="mi">61</span><span class="p">,</span> <span class="n">y0</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="mi">61</span><span class="p">,</span> <span class="n">y1</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
+    <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;yellow&quot;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">3</span><span class="p">),</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.5</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span> 
+    <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Durchschnitt 61%&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">61</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mi">2</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">arrowhead</span><span class="o">=</span><span class="mi">1</span>
+<span class="p">)</span>
+
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="s1">&#39;background&#39;</span><span class="p">],</span>
+    <span class="n">paper_bgcolor</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="s1">&#39;background&#39;</span><span class="p">],</span>
+    <span class="n">font_color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span>
+<span class="p">)</span>
+
+<span class="n">fig1</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="s1">&#39;background&#39;</span><span class="p">],</span>
+    <span class="n">paper_bgcolor</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="s1">&#39;background&#39;</span><span class="p">],</span>
+    <span class="n">font_color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span>
+<span class="p">)</span>
+
+<span class="n">fig2</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="s1">&#39;background&#39;</span><span class="p">],</span>
+    <span class="n">paper_bgcolor</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="s1">&#39;background&#39;</span><span class="p">],</span>
+    <span class="n">font_color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">],</span>
+    <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">showline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">showticklabels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">linecolor</span><span class="o">=</span><span class="s1">&#39;rgb(204, 204, 204)&#39;</span><span class="p">,</span>
+        <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+        <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span>
+        <span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+            <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(200, 200, 200)&#39;</span><span class="p">,</span>
+        <span class="p">),</span>
+    <span class="p">),</span>
+    <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">showline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">showticklabels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">linecolor</span><span class="o">=</span><span class="s1">&#39;rgb(204, 204, 204)&#39;</span><span class="p">,</span>
+        <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+        <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span>
+        <span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+            <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(200, 200, 200)&#39;</span><span class="p">,</span>
+        <span class="p">),</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">fig2</span><span class="o">.</span><span class="n">add_vrect</span><span class="p">(</span>
+    <span class="n">x0</span><span class="o">=</span><span class="s2">&quot;2007&quot;</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="s2">&quot;2010&quot;</span><span class="p">,</span> <span class="n">y0</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">y1</span><span class="o">=</span><span class="mi">170</span><span class="p">,</span>
+    <span class="n">fillcolor</span><span class="o">=</span><span class="s2">&quot;#FF3333&quot;</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span>
+    <span class="n">layer</span><span class="o">=</span><span class="s2">&quot;below&quot;</span><span class="p">,</span> <span class="n">line_width</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+<span class="p">)</span>
+
+
+<span class="n">fig2</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="mf">2008.5</span><span class="p">],</span>
+    <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">180</span><span class="p">],</span>
+    <span class="n">text</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Weltfinanzkrise&quot;</span><span class="p">],</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">,</span>
+    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">))</span>
+
+
+<span class="n">fig3</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="s1">&#39;background&#39;</span><span class="p">],</span>
+    <span class="n">paper_bgcolor</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="s1">&#39;background&#39;</span><span class="p">],</span>
+    <span class="n">font_color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span>
+<span class="p">)</span>
+<span class="n">fig7</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="s1">&#39;background&#39;</span><span class="p">],</span>
+    <span class="n">paper_bgcolor</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="s1">&#39;background&#39;</span><span class="p">],</span>
+    <span class="n">font_color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">],</span>
+    <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">showline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">showticklabels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">linecolor</span><span class="o">=</span><span class="s1">&#39;rgb(204, 204, 204)&#39;</span><span class="p">,</span>
+        <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+        <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span>
+        <span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+            <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(200, 200, 200)&#39;</span><span class="p">,</span>
+        <span class="p">),</span>
+    <span class="p">),</span>
+    <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">showline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">showticklabels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">linecolor</span><span class="o">=</span><span class="s1">&#39;rgb(204, 204, 204)&#39;</span><span class="p">,</span>
+        <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+        <span class="n">ticks</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span>
+        <span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+            <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(200, 200, 200)&#39;</span><span class="p">,</span>
+        <span class="p">),</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">app</span><span class="o">.</span><span class="n">layout</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;backgroundColor&#39;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="s1">&#39;background&#39;</span><span class="p">]},</span> <span class="n">children</span><span class="o">=</span><span class="p">[</span>
+    <span class="n">html</span><span class="o">.</span><span class="n">H1</span><span class="p">(</span>
+        <span class="n">children</span><span class="o">=</span><span class="s1">&#39;Immobilienmarktanalyse&#39;</span><span class="p">,</span>
+        <span class="n">style</span><span class="o">=</span><span class="p">{</span>
+            <span class="s1">&#39;textAlign&#39;</span><span class="p">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">),</span>
+    <span class="n">dcc</span><span class="o">.</span><span class="n">Tabs</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s2">&quot;tabs&quot;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s1">&#39;tab-1-selected&#39;</span><span class="p">,</span> <span class="n">children</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">dcc</span><span class="o">.</span><span class="n">Tab</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Region&#39;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s1">&#39;tab-1-selected&#39;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="n">tab_style</span><span class="p">,</span> <span class="n">selected_style</span><span class="o">=</span><span class="n">tab_selected_style</span><span class="p">),</span>
+        <span class="n">dcc</span><span class="o">.</span><span class="n">Tab</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Wertsteigerung&#39;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s1">&#39;tab-2-selected&#39;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="n">tab_style</span><span class="p">,</span> <span class="n">selected_style</span><span class="o">=</span><span class="n">tab_selected_style</span><span class="p">),</span>
+        <span class="n">dcc</span><span class="o">.</span><span class="n">Tab</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Saisonaler Markt&#39;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s1">&#39;tab-3-selected&#39;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="n">tab_style</span><span class="p">,</span> <span class="n">selected_style</span><span class="o">=</span><span class="n">tab_selected_style</span><span class="p">),</span>
+    <span class="p">]),</span>
+    <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;tabs-content&#39;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;backgroundColor&#39;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="s1">&#39;background&#39;</span><span class="p">]}),</span>
+
+    
+    
+<span class="p">])</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">callback</span><span class="p">(</span><span class="n">Output</span><span class="p">(</span><span class="s1">&#39;tabs-content&#39;</span><span class="p">,</span> <span class="s1">&#39;children&#39;</span><span class="p">),</span>
+              <span class="n">Input</span><span class="p">(</span><span class="s1">&#39;tabs&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">))</span>
+<span class="k">def</span> <span class="nf">render_content</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">tab</span> <span class="o">==</span> <span class="s1">&#39;tab-1-selected&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;backgroundColor&#39;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="s1">&#39;background&#39;</span><span class="p">]},</span><span class="n">children</span><span class="o">=</span><span class="p">[</span>
+            <span class="n">html</span><span class="o">.</span><span class="n">H3</span><span class="p">(</span><span class="s1">&#39;optimale Investitionsstandorte im deutschen Immobilienmarkt&#39;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;textAlign&#39;</span><span class="p">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span><span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]}),</span>
+            <span class="n">dcc</span><span class="o">.</span><span class="n">Graph</span><span class="p">(</span><span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">),</span>
+            <span class="n">dcc</span><span class="o">.</span><span class="n">Graph</span><span class="p">(</span><span class="n">figure</span><span class="o">=</span><span class="n">fig2</span><span class="p">)</span>
+        <span class="p">])</span>
+    <span class="k">elif</span> <span class="n">tab</span> <span class="o">==</span> <span class="s1">&#39;tab-2-selected&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">([</span>
+            <span class="n">html</span><span class="o">.</span><span class="n">H3</span><span class="p">(</span><span class="s1">&#39;Immobilienwertsteigerung&#39;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;textAlign&#39;</span><span class="p">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span><span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]}),</span>
+            <span class="n">html</span><span class="o">.</span><span class="n">H5</span><span class="p">(</span><span class="s1">&#39;Immobilienoptimierungen durch Modernisierungen und Renovierungen von Teilen der Immobilien&#39;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;textAlign&#39;</span><span class="p">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span><span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]}),</span>
+            <span class="n">dcc</span><span class="o">.</span><span class="n">Graph</span><span class="p">(</span><span class="n">figure</span><span class="o">=</span><span class="n">fig1</span><span class="p">),</span>
+            <span class="n">dcc</span><span class="o">.</span><span class="n">Graph</span><span class="p">(</span><span class="n">figure</span><span class="o">=</span><span class="n">fig7</span><span class="p">)</span>
+        <span class="p">])</span>
+    <span class="k">elif</span> <span class="n">tab</span> <span class="o">==</span> <span class="s1">&#39;tab-3-selected&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">([</span>
+            <span class="n">html</span><span class="o">.</span><span class="n">H3</span><span class="p">(</span><span class="s1">&#39;optimaler Zeitpunkt für den Kauf und Verkauf von Immobilien&#39;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;textAlign&#39;</span><span class="p">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span><span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]}),</span>
+            <span class="n">dcc</span><span class="o">.</span><span class="n">Graph</span><span class="p">(</span>
+                <span class="n">figure</span><span class="o">=</span><span class="n">fig3</span>
+            <span class="p">),</span>
+            <span class="n">dcc</span><span class="o">.</span><span class="n">Markdown</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">##### Die durchschnittlichen Verkaufspreise steigen in der Regel im Frühjahr und Herbst, während sie </span>
+<span class="s1">##### im Hochsommer und Winter fallen. Die Verkaufspreise spiegeln im Allgemeinen den Markt im Vormonat wider. </span>
+
+<span class="s1">##### Die steigenden Verkaufszahlen im Sommer deuten auf erhöhten Bedarf und Interesse hin während</span>
+<span class="s1">##### die niedrigen Verkäufe im April und Oktober vor allem auf die sehr hohen Preise zurückzuführen sind.</span>
+
+<span class="s1">##### Der Markt scheint stark saisonabhängig und erreicht seinen Höhepunkt in Verkäufen im Sommer</span>
+<span class="s1">##### eines jeden Jahres und seine Tiefpunkte bei hohen Preisschwankungen (nach oben).</span>
+
+<span class="s1"># &amp;nbsp;</span>
+<span class="s1"># &amp;nbsp;</span>
+<span class="s1">            &#39;&#39;&#39;</span><span class="p">),</span>
+        <span class="p">],</span> <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;textAlign&#39;</span><span class="p">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="s1">&#39;color&#39;</span><span class="p">:</span><span class="s1">&#39;white&#39;</span><span class="p">})</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run_server</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dash is running on http://127.0.0.1:8050/
+
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app &#39;__main__&#39; (lazy loading)
+ * Environment: production
+<span class=" -Color -Color-Red">   WARNING: This is a development server. Do not use it in a production deployment.</span>
+<span class=" -Color -Color-Faint">   Use a production WSGI server instead.</span>
+ * Debug mode: on
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="n">An</span> <span class="n">exception</span> <span class="n">has</span> <span class="n">occurred</span><span class="p">,</span> <span class="n">use</span> <span class="o">%</span><span class="k">tb</span> to see the full traceback.
+
+<span class="ne">SystemExit</span>: 1
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\andre\anaconda3\envs\dash\lib\site-packages\IPython\core\interactiveshell.py:3452: UserWarning:
+
+To exit: use &#39;exit&#39;, &#39;quit&#39;, or Ctrl-D.
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Story.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Story</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Report.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Report Dokumentation</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By The Jupyter Book community<br/>
+    
+        &copy; Copyright 2020.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

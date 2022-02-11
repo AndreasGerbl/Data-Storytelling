@@ -1,7 +1,4 @@
-Welcome to your Jupyter Book
+# Data Storytelling Dokumentation
 ============================
 
-This is a small sample book to give you a feel for how book content is
-structured.
-
-Check out the content pages bundled with this sample book to get started.
+Dies ist die Dokumentation für meine Umsetzung der Kursinhalte vom Kurs Data Storytelling.
